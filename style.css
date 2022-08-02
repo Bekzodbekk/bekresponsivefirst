@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+
+header{
+    background-image: url(./trees.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0px;
+    padding: 0px 150px;
+}
+ul{
+    padding: 20px 0;
+    transition: 0.5s;
+}
+ul li{
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 40px;
+    transition: 0.2s color;
+}
+ul li:hover{
+    transition: 0.2s color;
+    color: rgb(0, 140, 196);
+}
+
+.logo{
+    font-size: 40px;
+}
+.hamburger{
+    display: none;
+}
+
+
+.main_text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    min-height: 70vh;
+}
+.btn1{
+    display: none;
+}
+.btn{
+    width: 120px;
+    height: 50px
+}
+
+@media only screen and (max-width: 1140px){
+    nav{
+        margin: 30px 0px;
+        padding: 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 930px){
+    ul li{
+        font-size: 15px;
+        margin: 0 20px;
+        transition: 0.2s color;
+    }
+    .logo{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .btn{
+        width: 100px;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 690px){
+    
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 13px;
+        font-size: 30px;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        transition: 0.5s;
+        left: 0;
+        top: -960px;
+        height: 100vh;
+        background-color: rgb(91, 108, 255);
+        padding-top: 100px;
+        border-bottom-right-radius: 150px;
+        border-bottom-left-radius: 150px;
+        
+    }
+    ul li{
+        position: relative;
+        box-sizing: border-box;
+        display: block;
+        padding-top: 30px;
+        font-size: 40px;
+        text-align: center;
+    }
+    ul li:hover{
+        color: blue;
+    }
+    .btn{
+        display: none;
+    }
+    .btn1{
+        display: block;
+        margin: 50px 100px;
+        padding: 10px 80px;
+        background-color: rgb(17, 116, 245);
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+}
+
+
+.online_offline{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.918);
+    width: 100%;
+    height: 100vh;
+}
